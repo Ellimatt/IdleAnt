@@ -35,8 +35,8 @@ export class World {
       [],
       [],
       [
-        new Cost(game.baseWorld.food, new Decimal(1E12)),
-        new Cost(game.baseWorld.nestAnt, new Decimal(40))
+        new Cost(game.baseWorld.food, new Decimal(10)),
+        new Cost(game.baseWorld.nestAnt, new Decimal(4))
       ]
     )
     baseWorld.experience = new Decimal(10)
