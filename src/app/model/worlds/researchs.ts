@@ -115,16 +115,16 @@ export class Researchs implements WorldInterface {
       }
     );
 
-    //  Time Warp
+    //  Time Warp Man
     this.timeWarp = new Research(
       "timeWarp",
       "Time warp",
-      "Lot's hour of update.",
-      [new Cost(this.game.baseWorld.science, new Decimal(1))],
+      "Lot's hours of update.",
+      [new Cost(this.game.baseWorld.science, new Decimal(100))],
       [],
       this.game,
       () => {
-        this.game.longUpdate(36000000000000000, true);
+        this.game.longUpdate(36000000, true);
       }
     );
 
