@@ -23,10 +23,10 @@
               <progress max="100" [value]="cost.unit.quantity.times(100).div(cost.basePrice).toNumber()" data-displayval="0%">
               </progress>
               <span *ngIf="!cost.unit.quantity.greaterThan(cost.basePrice) ;else other_content">
-                {{cost.unit.quantity.times(100).div(cost.basePrice) | format}}%
+                {{cost.unit.quantity.times(1).div(cost.basePrice) | format}}%
               </span>
               <ng-template #other_content>
-                <span> 100% </span>
+                <span> 900% </span>
               </ng-template>
 
             </div>
@@ -72,8 +72,7 @@
     <ng-template #skip_content>
       <div *ngIf="gameService.game.skip">
         <p>
-          By skipping you will be able to change worlds, but you will not get experience! If you change your mind
-          go to another tab.
+          By skipping get experience! If you change your mind try again!!!
         </p>
       </div>
     </ng-template>
