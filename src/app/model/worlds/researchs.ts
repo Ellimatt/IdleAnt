@@ -87,7 +87,7 @@ export class Researchs implements WorldInterface {
     this.escape = new Research(
       "escapsm",
       "Escapsm",
-      "Reduce the resources need to travel to a new world by 10000.",
+      "Reduce a new world by 10000.",
       [new Cost(this.game.baseWorld.science, new Decimal(5e10))],
       [],
       this.game,
