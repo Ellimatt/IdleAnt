@@ -299,7 +299,7 @@ export class Prestige implements WorldInterface {
       const ba = new BuyAction(this.game, eff,
         [new Cost(this.experience, new Decimal(50), expIncrement)])
 
-      ba.limit = new Decimal(10)
+      ba.limit = new Decimal(20)
 
       eff.actions.push(ba)
 
@@ -326,7 +326,7 @@ export class Prestige implements WorldInterface {
       const ba = new BuyAction(this.game, eff,
         [new Cost(this.experience, new Decimal(60), expIncrement)])
 
-      ba.limit = new Decimal(10)
+      ba.limit = new Decimal(20)
 
       eff.actions.push(ba)
 
