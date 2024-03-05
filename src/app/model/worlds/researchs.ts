@@ -72,14 +72,14 @@ export class Researchs implements WorldInterface {
       "evolution",
       "Evolutions",
       "Increase the resources need to travel to a new world and also increase the experience you will gain. I don't know if you can see this text",
-      [new Cost(this.game.baseWorld.science, new Decimal(0.0001))],
+      [new Cost(this.game.baseWorld.science, new Decimal(0.01))],
       [],
       this.game,
       () => {
         this.game.world.toUnlock.forEach(
-          t => (t.basePrice = t.basePrice.times(0.0001))
+          t => (t.basePrice = t.basePrice.times(0.01))
         );
-        this.game.world.experience = this.game.world.experience.times(1000000000000000);
+        this.game.world.experience = this.game.world.experience.times(10000000);
       }
     );
 
@@ -124,7 +124,7 @@ export class Researchs implements WorldInterface {
       [],
       this.game,
       () => {
-        this.game.longUpdate(36000000, true);
+        this.game.longUpdate(360000000, true);
       }
     );
 
@@ -137,7 +137,7 @@ export class Researchs implements WorldInterface {
       [],
       this.game,
       () => {
-        this.game.world.experience = this.game.world.experience.times(100000000000);
+        this.game.world.experience = this.game.world.experience.times(1000000);
       }
     );
 
