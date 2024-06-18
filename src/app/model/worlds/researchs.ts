@@ -130,9 +130,9 @@ export class Researchs implements WorldInterface {
 
     //    Here and Now 2
     this.hereAndNow2 = new Research(
-      "han2Res",
-      "Over and Beyond",
-      "Get LOT more experience when travel.",
+      "OB",
+      "OB2",
+      "LOT more experience. And It Worked!",
       [new Cost(this.game.baseWorld.science, new Decimal(1e12))],
       [],
       this.game,
