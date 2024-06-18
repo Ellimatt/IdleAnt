@@ -150,7 +150,7 @@ export class Researchs implements WorldInterface {
       [this.timeWarp, this.hereAndNow2],
       this.game,
       () => {
-        const ne = Math.max(this.game.world.level * 1000000000000000, 10);
+        const ne = Math.max(this.game.world.level * 1000000000000000, 1000000);
 
         this.game.prestige.experience.quantity = this.game.prestige.experience.quantity.plus(
           ne
