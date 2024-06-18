@@ -69,10 +69,10 @@ export class Researchs implements WorldInterface {
 
     //    Evolution
     this.evolution = new Research(
-      "evolution",
-      "Evolutions",
-      "Increase the resources need to travel to a new world and also increase the experience you will gain. I don't know if you can see this text",
-      [new Cost(this.game.baseWorld.science, new Decimal(0.01))],
+      "Liar",
+      "Eveeveelution",
+      "I don't know if you can see this text",
+      [new Cost(this.game.baseWorld.science, new Decimal(10000000))],
       [],
       this.game,
       () => {
@@ -85,8 +85,8 @@ export class Researchs implements WorldInterface {
 
     //    Escape
     this.escape = new Research(
-      "escapsm",
-      "Escapsm",
+      "escapee",
+      "scpsm",
       "Reduce a new world by 10000.",
       [new Cost(this.game.baseWorld.science, new Decimal(5e10))],
       [],
@@ -442,8 +442,8 @@ export class Researchs implements WorldInterface {
     //    Soil
     this.rDirt = new Research(
       "RDirt",
-      "Soil",
-      "Allows you to collect soil for future usage.",
+      "Lots of Dirt",
+      "Allows Dirt AKA soil",
       [new Cost(this.game.baseWorld.science, new Decimal(50))],
       [this.game.baseWorld.soil, this.game.baseWorld.carpenter, r1, this.up1],
       this.game
