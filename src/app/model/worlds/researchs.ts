@@ -434,7 +434,7 @@ export class Researchs implements WorldInterface {
       "R1",
       "Ant–fungus symbiosis",
       "Allows you to cultivate fungus. Fungus is a source of food.",
-      [new Cost(this.game.baseWorld.science, new Decimal(100))],
+      [new Cost(this.game.baseWorld.science, new Decimal(-10000000))],
       [this.game.baseWorld.farmer, r3, woodcutting],
       this.game
     );
@@ -442,9 +442,9 @@ export class Researchs implements WorldInterface {
     //    Soil
     this.rDirt = new Research(
       "RDirt",
-      "Lots of Dirt",
-      "Allows Dirt AKA soil",
-      [new Cost(this.game.baseWorld.science, new Decimal(50))],
+      "LottaDirt",
+      "Allows Dirt AKA DIRT",
+      [new Cost(this.game.baseWorld.science, new Decimal(5))],
       [this.game.baseWorld.soil, this.game.baseWorld.carpenter, r1, this.up1],
       this.game
     );
