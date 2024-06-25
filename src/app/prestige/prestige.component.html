@@ -20,7 +20,7 @@
           </td>
           <td style="width:100%">
             <div class="progress labeled" [ngClass]="{'success': cost.unit.quantity.greaterThanOrEqualTo(cost.basePrice), 'danger': !cost.unit.quantity.greaterThanOrEqualTo(cost.basePrice)}">
-              <progress max="100" [value]="cost.unit.quantity.times(100).div(cost.basePrice).toNumber()" data-displayval="0%">
+              <progress max="100" [value]="cost.unit.quantity.times(1).div(cost.basePrice).toNumber()" data-displayval="0%">
               </progress>
               <span *ngIf="!cost.unit.quantity.greaterThan(cost.basePrice) ;else other_content">
                 {{cost.unit.quantity.times(1).div(cost.basePrice) | format}}%
@@ -45,7 +45,7 @@
             </td>
             <td style="width:100%">
               <div class="progress labeled" [ngClass]="{'success': !cost.unit.quantity.greaterThanOrEqualTo(cost.basePrice), 'danger': cost.unit.quantity.greaterThanOrEqualTo(cost.basePrice)}">
-                <progress max="100" [value]="cost.unit.quantity.times(100).div(cost.basePrice).toNumber()" data-displayval="0%">
+                <progress max="100" [value]="cost.unit.quantity.times(1).div(cost.basePrice).toNumber()" data-displayval="0%">
                 </progress>
                 <span *ngIf="!cost.unit.quantity.greaterThan(cost.basePrice)">
                   {{cost.unit.quantity.times(100).div(cost.basePrice) | format}}%
