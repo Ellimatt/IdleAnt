@@ -372,9 +372,9 @@ export class Researchs implements WorldInterface {
     allUp.push(this.r4);
     this.r2 = new Research(
       "R2",
-      "Teamwork 2",
-      "Upgrade your unit's production bonus.",
-      [new Cost(this.game.baseWorld.science, new Decimal(500))],
+      "Teamworking 2",
+      "Upgration bonus.",
+      [new Cost(this.game.baseWorld.science, new Decimal(5))],
       allUp,
       this.game
     );
