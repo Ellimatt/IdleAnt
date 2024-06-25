@@ -45,7 +45,7 @@ export class BaseWorld implements WorldInterface {
 
   listJobs = Array<Unit>()
 
-  baseFood = new Decimal(800)
+  baseFood = new Decimal(80)
   price2 = new Decimal(100)
 
   //  Prices
@@ -214,17 +214,17 @@ export class BaseWorld implements WorldInterface {
     this.food.addProductor(new Production(this.littleAnt, new Decimal(1)))
     this.food.addProductor(new Production(this.fungus, new Decimal(2)))
     this.fungus.addProductor(new Production(this.farmer))
-    this.soil.addProductor(new Production(this.farmer, new Decimal(-1)))
-    this.crystal.addProductor(new Production(this.geologist, new Decimal(0.2)))
+    this.soil.addProductor(new Production(this.farmer, new Decimal(-0.01)))
+    this.crystal.addProductor(new Production(this.geologist, new Decimal(200)))
     this.soil.addProductor(new Production(this.carpenter))
     this.wood.addProductor(new Production(this.lumberjack))
 
     this.food.addProductor(new Production(this.hunter, new Decimal(50)))
-    this.wood.addProductor(new Production(this.hunter, new Decimal(-2)))
+    this.wood.addProductor(new Production(this.hunter, new Decimal(-0.01)))
 
     this.food.addProductor(new Production(this.advancedHunter, new Decimal(250)))
-    this.wood.addProductor(new Production(this.advancedHunter, new Decimal(-10)))
-    this.crystal.addProductor(new Production(this.advancedHunter, new Decimal(-5)))
+    this.wood.addProductor(new Production(this.advancedHunter, new Decimal(-0.01)))
+    this.crystal.addProductor(new Production(this.advancedHunter, new Decimal(-0.01)))
 
     //    Geologist
     this.geologist.actions.push(new BuyAndUnlockAction(this.game,
@@ -420,20 +420,20 @@ export class BaseWorld implements WorldInterface {
       new World(this.game, "Crystallized", "",
         [this.game.machines.mine, this.game.engineers.mineEnginer],
         [
-          [this.game.baseWorld.crystal, new Decimal(1.5)],
-          [this.game.baseWorld.food, new Decimal(0.4)],
-          [this.game.baseWorld.fungus, new Decimal(0.4)]
+          [this.game.baseWorld.crystal, new Decimal(1000000)],
+          [this.game.baseWorld.food, new Decimal(400)],
+          [this.game.baseWorld.fungus, new Decimal(400)]
         ],
         []
       ),
       new World(this.game, "Dying", "",
         [],
         [
-          [this.food, new Decimal(0.5)],
-          [this.fungus, new Decimal(0.5)],
-          [this.wood, new Decimal(0.5)],
-          [this.honey, new Decimal(0.5)],
-          [this.nectar, new Decimal(0.5)]
+          [this.food, new Decimal(5000000)],
+          [this.fungus, new Decimal(5000000)],
+          [this.wood, new Decimal(5000000)],
+          [this.honey, new Decimal(5000000)],
+          [this.nectar, new Decimal(5000000)]
         ],
         [], [], [], [],
         new Decimal(3.2)
