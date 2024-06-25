@@ -36,9 +36,9 @@ export class GameModel {
   buyExp = new Decimal(1.1);
   buyExpUnit = new Decimal(1);
   scienceCost1 = new Decimal(100);
-  scienceCost2 = new Decimal(1e3);
-  scienceCost3 = new Decimal(1e4);
-  scienceCost4 = new Decimal(1e5);
+  scienceCost2 = new Decimal(102);
+  scienceCost3 = new Decimal(103);
+  scienceCost4 = new Decimal(104);
   upgradeScienceExp = new Decimal(4);
   upgradeScienceHireExp = new Decimal(6);
 
